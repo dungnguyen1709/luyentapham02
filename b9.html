@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [6,6,99,17,9,97,18,7,69,20,10,72];
+    let b = Number(prompt("Nhập số"));
+    let c = 0;
+
+    function kiemtra(x,y) {
+        for (i = 0; i < x.length; i++) {
+            for (j = 0; j < x.length; j++) {
+                if (x.indexOf(y) != -1) {
+                    if (a[i] == y) {
+                        c++;
+                        alert(" Xuất hiện " + c + " lần ");
+                    }
+                    break;
+                } else {
+                    alert(" Không xuất hiện ");
+                    break;
+                }
+            }
+        }
+    }
+    console.log(kiemtra(a,b));
+</script>
+</body>
+</html>
